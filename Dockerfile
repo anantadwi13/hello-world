@@ -13,5 +13,6 @@ WORKDIR /root
 COPY --from=builder /go/src/workdir/service .
 
 EXPOSE 80
+ENV NAME=""
 
 ENTRYPOINT ["./service"]
